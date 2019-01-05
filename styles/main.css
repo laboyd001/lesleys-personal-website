@@ -21,17 +21,22 @@
   flex-direction: column;
   align-items: center;
 }
-/* End styling */
+/* End main styling */
 
 /* About Section */
 .about-pic{
 	min-width: 400px;
 	width: 100%;
 }
+
+.social-icons{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 /* End About Section */
 
 /* Experience Section */
-
 /* End Experience Section */
 
 /* Projects Section */
@@ -47,6 +52,19 @@
 
 /* Contact Section */
 /* End Contact Section */
+
+/* footer */
+.social-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+} 
+
+.social-footer div{
+  width:10%;
+}
+/* end footer */
+
 
 
 
