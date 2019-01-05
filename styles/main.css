@@ -1,6 +1,6 @@
 /* Main Navigation */
 html {
-    scroll-behavior: smooth
+  scroll-behavior: smooth
 }
 /* End Main Nav */
 
@@ -13,8 +13,19 @@ html {
   font-size:20px;
 }
 
-.orange{
-  color:#F37242;
+.flexbox{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.flexbox div{
+  width:20%;
+  margin: 1% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 /* End styling */
 
@@ -31,6 +42,14 @@ html {
 
 /* Projects Section */
 /* End Projects Section */
+
+/* Technology Section */
+.small{
+  height:100px;
+  width:90px;
+}
+/* End Technology Section */
+
 
 /* Contact Section */
 /* End Contact Section */
