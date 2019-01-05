@@ -1,11 +1,3 @@
-console.log("howdy")
-
-
-// sidenav hamburger toggle==========================
-  $(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
-// end sidenav toggle===============================
 
 // header image changer=============================
 $(document).ready(function(){
@@ -13,15 +5,25 @@ $(document).ready(function(){
 });
 // end header image changer=========================
 
+/* NAVIGATION
+===================================================*/ 
 
-// scroll to element================================
-function aboutScroll() {
-    let elmnt = document.getElementById("about");
-    elmnt.scrollIntoView();
-  }
+// sidenav hamburger toggle==========================
+$(document).ready(function(){
+  $('.sidenav').sidenav();
+});
+// end sidenav toggle===============================
 
-function expScroll() {
-    let elmnt = document.getElementById("experience");
-    elmnt.scrollIntoView();
-  }
-// end scroll to element
+// Scroll Into View=================================
+const scrollElmnt = ((position) => {
+  let elmnt = document.getElementById(position)
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block:'start'
+  });   
+
+})
+// End Scroll into View=============================
+
+
+
