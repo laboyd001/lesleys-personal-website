@@ -21,29 +21,37 @@
     <div class="navbar-fixed">
       <nav class="teal lighten-3">
           <div class="nav-wrapper container">
-            <a href="#!" class="brand-logo">Lesley Boyd</a>
+            <a href="#" onclick="scrollElmnt('home')" class="brand-logo">Lesley Boyd</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="#about">About Me</a></li>
-              <li><a href="#exp">Experience</li></a>
-              <li><a href="collapsible.html">Projects</a></li>
-              <li><a href="collapsible.html">Technology</a></li>
-              <li><a href="mobile.html">Contact</a></li>
+              <li ><a onclick="scrollElmnt('about')">About Me</a></li>
+              <li><a onclick="scrollElmnt('exp')">Experience</a></li>
+              <li><a onclick="scrollElmnt('projects')">Projects</a></li>
+              <li><a onclick="scrollElmnt('tech')">Technology</a></li>
+              <li><a onclick="scrollElmnt('contact')">Contact</a></li>
             </ul>
           </div>
       </nav>
-          
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#exp">Experience</a></li>
-        <li><a href="collapsible.html">Projects</a></li>
-        <li><a href="mobile.html">Contact</a></li>
-      </ul>
     </div>
+
+      <!--SideNav for Mobile-->
+      <ul class="sidenav" id="mobile-demo">
+        <li><a onclick="scrollElmnt('about')">About Me</a></li>
+        <li><a onclick="scrollElmnt('exp')">Experience</a></li>
+        <li><a onclick="scrollElmnt('projects')">Projects</a></li>
+        <li><a onclick="scrollElmnt('tech')">Technology</a></li>
+        <li><a onclick="scrollElmnt('contact')">Contact</a></li>
+        <li><a class="sidenav-close">
+          <i class="material-icons">arrow_back</i></a>
+        </li>
+      </ul>
+      <!--End SideNav for Mobile-->
+
+    
     <!--End Navigation-->
 
       <!--Header Section-->
-      <header class="teal lighten-3">
+      <header class="teal lighten-3" id="home">
         <div class="slider">
             <ul class="slides">
               <li>
@@ -88,9 +96,9 @@
 
       <!--About Section-->
       <div id="about">
-        <h5>About Me</h5>
-        <div class="divider"></div>
+        
         <div class="section">
+          <h5>About Me</h5>
           <div class="row">
             <div class="col s12 m6 l6">
                 <h5>Hello, I am Lesley</h5>
@@ -110,297 +118,299 @@
     
       <!--Experience Section-->
       <div id="exp">
-        <h5>Experience</h5>
-        <div class="divider"></div>
         <div class="section">
-            <div class="row">
-                <div class="col s12 m12 l4">
-                    <div class="card large">
-                      <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/experience/nss.png">
-                      </div>
-                      <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Nashville Software School<i class="material-icons right">more_vert</i></span>
-                        <p class="medium">2018 - 2019</p>
-                      </div>
-                      <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Nashville Software School<i class="material-icons right">close</i></span>
-                        <ul>
-                          <li>
-                            <h6>Fundamentals Learned</h6>
+          <h5>Experience</h5>
+          <div class="row">
+              <div class="col s12 m12 l4">
+                  <div class="card large">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/experience/nss.png">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Nashville Software School<i class="material-icons right">more_vert</i></span>
+                      <p class="medium">2018 - 2019</p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Nashville Software School<i class="material-icons right">close</i></span>
+                      <ul>
+                        <li>
+                          <h6>Fundamentals Learned</h6>
+                          <p>
+                              NSS taught me how to learn.  This was helpful when transitioning from vanilla JavaScript to  React from one project to the next.  I found it was less about memorizing code and more about  figuring out how to solve a problem.
+                              <br><br>
+                              I had the opportunity to learn how to work with a team to develop code and utilize Github and project boards.  This differed from individual projects due to the communication aspect of a group project and also finding out how to resolve coding merge conflicts.
+                          </p>
+                        </li>
+                        <li>
+                          <h6>Front-End Capstone</h6>
+                          <p>
+                              I created a bird journal app called Backyard Birder for the casual bird enthusiast like myself.  I  built it using React.  I learned about Google Maps APIs during the process and used their geocoder and map tools to add mapping functionality to the application.
+                          </p>
+                        </li>
+                        <li>
+                          <h6>Group Projects</h6>
                             <p>
-                                NSS taught me how to learn.  This was helpful when transitioning from vanilla JavaScript to  React from one project to the next.  I found it was less about memorizing code and more about  figuring out how to solve a problem.
+                                Worked with a group to create a social media type application called Nutshell using HTML, CSS, JavaScript, and React.  I worked on the events section of the application.  I utilized dynamic formatting and CRUD functionality to meet project requirements.
                                 <br><br>
-                                I had the opportunity to learn how to work with a team to develop code and utilize Github and project boards.  This differed from individual projects due to the communication aspect of a group project and also finding out how to resolve coding merge conflicts.
+                                Worked with a group to create a Nashville itinerary app that utilized JavaScript and multiple external APIs.  I became familiar with the Nashville Metro Parks API during this project as I was responsible for enabling functionality that displayed parks that a user could see based on an amenity they selected from a list of options.
                             </p>
                           </li>
-                          <li>
-                            <h6>Front-End Capstone</h6>
-                            <p>
-                                I created a bird journal app called Backyard Birder for the casual bird enthusiast like myself.  I  built it using React.  I learned about Google Maps APIs during the process and used their geocoder and map tools to add mapping functionality to the application.
-                            </p>
-                          </li>
-                          <li>
-                            <h6>Group Projects</h6>
-                              <p>
-                                  Worked with a group to create a social media type application called Nutshell using HTML, CSS, JavaScript, and React.  I worked on the events section of the application.  I utilized dynamic formatting and CRUD functionality to meet project requirements.
-                                  <br><br>
-                                  Worked with a group to create a Nashville itinerary app that utilized JavaScript and multiple external APIs.  I became familiar with the Nashville Metro Parks API during this project as I was responsible for enabling functionality that displayed parks that a user could see based on an amenity they selected from a list of options.
-                              </p>
-                            </li>
-                        </ul>
-                      </div>
+                      </ul>
                     </div>
-                </div>
-                <div class="col s12 m12 l4">
-                  <div class="card large">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="images/experience/bridgestone.png">
-                    </div>
-                    <div class="card-content">
-                      <span class="card-title activator grey-text text-darken-4">Bridgestone<i class="material-icons right">more_vert</i></span>
-                      <p class="medium">2014 - 2018</p>
+                  </div>
+              </div>
+              <div class="col s12 m12 l4">
+                <div class="card large">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/experience/bridgestone.png">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Bridgestone<i class="material-icons right">more_vert</i></span>
+                    <p class="medium">2014 - 2018</p>
 
-                    </div>
-                    <div class="card-reveal">
-                      <span class="card-title grey-text text-darken-4">Bridgestone<i class="material-icons right">close</i></span>
-                      <ul>
-                        <li>
-                          <h6>Tire Education Specialist</h6>
-                          <p>
-                              Delivered product and sales presentations to tire dealers across the country.  This included  interviewing tire business owners before an event to evaluate needs and plan a valuable training session.
-                              <br><br>
-                              Find innovative ways to train sales associates on being "Trusted Advisers".  I was able to attend training session on how to deliver great customer service.  We found that at the end of the day it's about people trusting someone to do right by them.  It takes time and effort to show someone you want to earn their business.
-                          </p>
-                        </li>
-                        <li>
-                          <h6>Business Analyst</h6>
-                          <p>
-                              Salesforce Administrator for the Consumer Tire Sales group of 150 users.  Worked with  members of the IT department to retire a legacy CRM for a newly acquired company and  integrate  their business into our existing Salesforce Org.  Developed KPI tracking tools inside  Salesforce for multiple teams.  Managed any data uploads, technical issues, and user modifications.
-                              <br><br>
-                              Worked with the Consumer Analytics team to use Alteryx to develop sales insights for multiple groups including a daily sales feed, geographic location tools, and channel growth visualizations.
-                              <br><br>
-                              Worked with IT and other analysts to utilize Tableau for dynamic visualization tools that were  once a manual process.  Additionally, I worked with IT to integrate Tableau and Salesforce as another way to view sales data.
-                          </p>
-                        </li>
-                      </ul>
-                    </div>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Bridgestone<i class="material-icons right">close</i></span>
+                    <ul>
+                      <li>
+                        <h6>Tire Education Specialist</h6>
+                        <p>
+                            Delivered product and sales presentations to tire dealers across the country.  This included  interviewing tire business owners before an event to evaluate needs and plan a valuable training session.
+                            <br><br>
+                            Find innovative ways to train sales associates on being "Trusted Advisers".  I was able to attend training session on how to deliver great customer service.  We found that at the end of the day it's about people trusting someone to do right by them.  It takes time and effort to show someone you want to earn their business.
+                        </p>
+                      </li>
+                      <li>
+                        <h6>Business Analyst</h6>
+                        <p>
+                            Salesforce Administrator for the Consumer Tire Sales group of 150 users.  Worked with  members of the IT department to retire a legacy CRM for a newly acquired company and  integrate  their business into our existing Salesforce Org.  Developed KPI tracking tools inside  Salesforce for multiple teams.  Managed any data uploads, technical issues, and user modifications.
+                            <br><br>
+                            Worked with the Consumer Analytics team to use Alteryx to develop sales insights for multiple groups including a daily sales feed, geographic location tools, and channel growth visualizations.
+                            <br><br>
+                            Worked with IT and other analysts to utilize Tableau for dynamic visualization tools that were  once a manual process.  Additionally, I worked with IT to integrate Tableau and Salesforce as another way to view sales data.
+                        </p>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div class="col s12 m12 l4">
-                  <div class="card large">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="images/experience/frito_lay.png">
-                    </div>
-                    <div class="card-content">
-                      <span class="card-title activator grey-text text-darken-4">Frito Lay<i class="material-icons right">more_vert</i></span>
-                      <p class="medium">2004 - 2014</p>
-                    </div>
-                    <div class="card-reveal">
-                      <span class="card-title grey-text text-darken-4">Frito Lay<i class="material-icons right">close</i></span>
-                      <ul>
-                        <li>
-                          <h6>Supply Chain/Operations</h6>
-                          <p>
-                              Organized sales order volume distribution to Central Gulf Region including Tennessee, Alabama, Louisiana, and Arkansas.  I was located in remotely in Tennessee, but accessed ordering systems across the region utilizing SAP.  Additionally, I communicated regularly with regional sales personnel and operations management to ensure on-time delivery and labor efficiencies.
-                              <br><br>
-                              Enabled labor tactic sustainment and accountability for the region by building reports and participating in region labor conference calls.
-                              <br><br>
-                              SAP Subject Matter Expert that facilitated procedural refresher training for sales and operations personnel.
-                          </p>
-                        </li>
-                        <li>
-                          <h6>SAP Solution Analyst</h6>
-                          <p>
-                              Member of the Project One Up SAP Release 7.0 - Order Management Team.
-                              <br></br>
-                              Managed end user technician groups while deploying SAP solution across the US and Canada in over 300 locations over a one year timespan.
-                              <br><br>
-                              Delivered formal end user SAP Order Management training for each wave of the deployment as well as on site support team member .
-                              <br><br>
-                              Leader of  the Integrated Connectivity Checkout (ICC) process of data from Legacy systems to SAP.
-                              <br><br>
-                              Responsible for change management of SAP implementation  in distribution centers ranging in volume from 12,000 cases a week to over 90,000 cases a week.
-                              <br><br>
-                              Validated business scenarios for developmental testing during SAP User Acceptance Testing.
-                          </p>
-                        </li>
-                      </ul>
-                    </div>
+              </div>
+              <div class="col s12 m12 l4">
+                <div class="card large">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/experience/frito_lay.png">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Frito Lay<i class="material-icons right">more_vert</i></span>
+                    <p class="medium">2004 - 2014</p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Frito Lay<i class="material-icons right">close</i></span>
+                    <ul>
+                      <li>
+                        <h6>Supply Chain/Operations</h6>
+                        <p>
+                            Organized sales order volume distribution to Central Gulf Region including Tennessee, Alabama, Louisiana, and Arkansas.  I was located in remotely in Tennessee, but accessed ordering systems across the region utilizing SAP.  Additionally, I communicated regularly with regional sales personnel and operations management to ensure on-time delivery and labor efficiencies.
+                            <br><br>
+                            Enabled labor tactic sustainment and accountability for the region by building reports and participating in region labor conference calls.
+                            <br><br>
+                            SAP Subject Matter Expert that facilitated procedural refresher training for sales and operations personnel.
+                        </p>
+                      </li>
+                      <li>
+                        <h6>SAP Solution Analyst</h6>
+                        <p>
+                            Member of the Project One Up SAP Release 7.0 - Order Management Team.
+                            <br></br>
+                            Managed end user technician groups while deploying SAP solution across the US and Canada in over 300 locations over a one year timespan.
+                            <br><br>
+                            Delivered formal end user SAP Order Management training for each wave of the deployment as well as on site support team member .
+                            <br><br>
+                            Leader of  the Integrated Connectivity Checkout (ICC) process of data from Legacy systems to SAP.
+                            <br><br>
+                            Responsible for change management of SAP implementation  in distribution centers ranging in volume from 12,000 cases a week to over 90,000 cases a week.
+                            <br><br>
+                            Validated business scenarios for developmental testing during SAP User Acceptance Testing.
+                        </p>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-            </div>
+              </div>
+          </div>
         </div>
       </div>
       <!--End Experience Section-->
 
 
       <!--Project Section-->
-      <div class="divider"></div>
-      <div class="section">
-        <h5>Projects</h5>
-        <div class="row">
-            <div class="col s12 m4 l4">
-              <div class="card medium">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="images/portfolio/backyard_birder_logo_wide.png">
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Backyard Birder<i class="material-icons right">more_vert</i></span>
-                  <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Backyard Birder<i class="material-icons right">close</i></span>
-                    <div class="card-image waves-effect waves-block waves-light">
-                     <img class="activator" src="images/portfolio/bb_screen_shots.png">
-                    </div>
-                  <p>A bird sighting app for the casual bird enthusiast built with React.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m4 l4">
-              <div class="card medium">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="images/portfolio/nutshell_wide.png">
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Nutshell<i class="material-icons right">more_vert</i></span>
-                  <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Nutshell<i class="material-icons right">close</i></span>
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="images/portfolio/nutshell_screenshot.png">
-                     </div>
-                   <p>A React social media app.  This was built as a group project.</p>
+      <div id="projects">
+        <div class="section">
+          <h5>Projects</h5>
+          <div class="row">
+              <div class="col s12 m4 l4">
+                <div class="card medium">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/portfolio/backyard_birder_logo_wide.png">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Backyard Birder<i class="material-icons right">more_vert</i></span>
+                    <p><a href="#">This is a link</a></p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Backyard Birder<i class="material-icons right">close</i></span>
+                      <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/portfolio/bb_screen_shots.png">
+                      </div>
+                    <p>A bird sighting app for the casual bird enthusiast built with React.</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col s12 m4 l4">
-              <div class="card medium">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="images/portfolio/nashville_wide.png">
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Welcome to Nashville<i class="material-icons right">more_vert</i></span>
-                  <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Welcome to Nashville<i class="material-icons right">close</i></span>
-                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                </div>
-              </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s12 m4 l4">
-              <div class="card medium">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="images/portfolio/coming_soon_wide.png">
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Coming Soon<i class="material-icons right">more_vert</i></span>
-                  <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Coming Soon<i class="material-icons right">close</i></span>
-                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <div class="col s12 m4 l4">
+                <div class="card medium">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/portfolio/nutshell_wide.png">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Nutshell<i class="material-icons right">more_vert</i></span>
+                    <p><a href="#">This is a link</a></p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Nutshell<i class="material-icons right">close</i></span>
+                      <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/portfolio/nutshell_screenshot.png">
+                      </div>
+                    <p>A React social media app.  This was built as a group project.</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col s12 m4 l4">
-              <div class="card medium">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="images/portfolio/coming_soon_wide.png">
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Coming Soon<i class="material-icons right">more_vert</i></span>
-                  <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Coming Soon<i class="material-icons right">close</i></span>
-                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m4 l4">
-              <div class="card medium">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="images/portfolio/coming_soon_wide.png">
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Coming Soon<i class="material-icons right">more_vert</i></span>
-                  <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Coming Soon<i class="material-icons right">close</i></span>
-                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <div class="col s12 m4 l4">
+                <div class="card medium">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/portfolio/nashville_wide.png">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Welcome to Nashville<i class="material-icons right">more_vert</i></span>
+                    <p><a href="#">This is a link</a></p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Welcome to Nashville<i class="material-icons right">close</i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  </div>
                 </div>
               </div>
-            </div>
+          </div>
+          <div class="row">
+              <div class="col s12 m4 l4">
+                <div class="card medium">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/portfolio/coming_soon_wide.png">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Coming Soon<i class="material-icons right">more_vert</i></span>
+                    <p><a href="#">This is a link</a></p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Coming Soon<i class="material-icons right">close</i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m4 l4">
+                <div class="card medium">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/portfolio/coming_soon_wide.png">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Coming Soon<i class="material-icons right">more_vert</i></span>
+                    <p><a href="#">This is a link</a></p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Coming Soon<i class="material-icons right">close</i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m4 l4">
+                <div class="card medium">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/portfolio/coming_soon_wide.png">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Coming Soon<i class="material-icons right">more_vert</i></span>
+                    <p><a href="#">This is a link</a></p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Coming Soon<i class="material-icons right">close</i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
         </div>
       </div>
       <!--End Project Section-->
 
       <!--Technology Section-->
-      <div class="section">
-        <h5>Technology</h5>
-        <div class="flexbox">
-          <div>
-            <img src="images/tech/html.png" alt="html" class="small">
-            <p>HTML</p>
-          </div>
-          <div>
-            <img src="images/tech/css.png" alt="css" class="small">
-            <p>CSS</p>
-          </div>
-          <div>
-            <img src="images/tech/javascript.png" alt="javascript" class="small">
-            <p>JavaScript</p>
-          </div>
-          <div>
-            <img src="images/tech/react.png" alt="react" class="small">
-            <p>React</p>
-          </div>
-          <div>
-            <img src="images/tech/reactstrap.png" alt="reactstrap" class="small">
-            <p>Reactstrap</p>
-          </div>
-          <div>
-            <img src="images/tech/python.png" alt="python" class="small">
-            <p>Python</p>
-          </div>
-          <div>
-            <img src="images/tech/django.png" alt="django" class="small">
-            <p>Django</p>
-          </div>
-          <div>
-            <img src="images/tech/ubuntu.png" alt="ubuntu" class="small">
-            <p>Ubuntu</p>
-          </div>
-          <div>
-            <img src="images/tech/google-maps.png" alt="google-maps" class="small">
-            <p>Google Maps</p>
-          </div>
-          <div>
-            <img src="images/tech/materialize.svg" alt="materialize" class="small">
-            <p>Materialize</p>
-          </div>
-          <div>
-            <img src="images/tech/bootstrap.png" alt="bootstrap" class="small">
-            <p>Bootstrap</p>
-          </div>
-          <div>
-            <img src="images/tech/browserify.png" alt="browserify" class="small">
-            <p>Browserify</p>
-          </div>
-          <div>
-            <img src="images/tech/grunt-1-logo.png" alt="grunt" class="small">
-            <p>Grunt</p>
-          </div>
-          <div>
-            <img src="images/tech/postman.png" alt="postman" class="small">
-            <p>Postman</p>
+      <div id="tech">
+        <div class="section">
+          <h5>Technology</h5>
+          <div class="flexbox">
+            <div>
+              <img src="images/tech/html.png" alt="html" class="small">
+              <p>HTML</p>
+            </div>
+            <div>
+              <img src="images/tech/css.png" alt="css" class="small">
+              <p>CSS</p>
+            </div>
+            <div>
+              <img src="images/tech/javascript.png" alt="javascript" class="small">
+              <p>JavaScript</p>
+            </div>
+            <div>
+              <img src="images/tech/react.png" alt="react" class="small">
+              <p>React</p>
+            </div>
+            <div>
+              <img src="images/tech/reactstrap.png" alt="reactstrap" class="small">
+              <p>Reactstrap</p>
+            </div>
+            <div>
+              <img src="images/tech/python.png" alt="python" class="small">
+              <p>Python</p>
+            </div>
+            <div>
+              <img src="images/tech/django.png" alt="django" class="small">
+              <p>Django</p>
+            </div>
+            <div>
+              <img src="images/tech/ubuntu.png" alt="ubuntu" class="small">
+              <p>Ubuntu</p>
+            </div>
+            <div>
+              <img src="images/tech/google-maps.png" alt="google-maps" class="small">
+              <p>Google Maps</p>
+            </div>
+            <div>
+              <img src="images/tech/materialize.svg" alt="materialize" class="small">
+              <p>Materialize</p>
+            </div>
+            <div>
+              <img src="images/tech/bootstrap.png" alt="bootstrap" class="small">
+              <p>Bootstrap</p>
+            </div>
+            <div>
+              <img src="images/tech/browserify.png" alt="browserify" class="small">
+              <p>Browserify</p>
+            </div>
+            <div>
+              <img src="images/tech/grunt-1-logo.png" alt="grunt" class="small">
+              <p>Grunt</p>
+            </div>
+            <div>
+              <img src="images/tech/postman.png" alt="postman" class="small">
+              <p>Postman</p>
+            </div>
           </div>
         </div>
       </div>
@@ -414,29 +424,31 @@
       <!--Start Footer-->
       <footer class="page-footer teal lighten-3">
         <!--Contact Section-->
-        <div class="section container">
-          <h5 class="center">Contact Me</h5>
-          <div class="row">
-            <div class="col s12 m4 l4">
-              <div class="single-contact-icon center">
-                <a href="mailto:lesley.a.boyd1@gmail.com" target="_blank" id="email"> 
-                  <i class="fa fa-envelope fa-2x"></i>
-                </a>
-                <p>lesley.a.boyd1@gmail.com</p>
+        <div id="contact">
+          <div class="section container">
+            <h5 class="center">Contact Me</h5>
+            <div class="row">
+              <div class="col s12 m4 l4">
+                <div class="single-contact-icon center">
+                  <a href="mailto:lesley.a.boyd1@gmail.com" target="_blank" id="email"> 
+                    <i class="fa fa-envelope fa-2x"></i>
+                  </a>
+                  <p>lesley.a.boyd1@gmail.com</p>
+                </div>
               </div>
-            </div>
-            <div class="col s12 m4 l4">
-              <div class="single-contact-icon center">
-                <a href="https://www.google.com/maps/place/Donelson,+Nashville,+TN/@36.1843555,-86.705733,13z">
-                  <i class="fa fa-map-marker fa-2x"></i>
-                </a>
-                <p>Nashville, TN</p>
+              <div class="col s12 m4 l4">
+                <div class="single-contact-icon center">
+                  <a href="https://www.google.com/maps/place/Donelson,+Nashville,+TN/@36.1843555,-86.705733,13z">
+                    <i class="fa fa-map-marker fa-2x"></i>
+                  </a>
+                  <p>Nashville, TN</p>
+                </div>
               </div>
-            </div>
-            <div class="col s12 m4 l4">
-              <div class="single-contact-icon center">
-                <a><i class="fa fa-phone fa-2x"></i></a>
-                <p>(270) 316-1903</p>
+              <div class="col s12 m4 l4">
+                <div class="single-contact-icon center">
+                  <a><i class="fa fa-phone fa-2x"></i></a>
+                  <p>(270) 316-1903</p>
+                </div>
               </div>
             </div>
           </div>
