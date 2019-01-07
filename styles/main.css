@@ -7,6 +7,14 @@
   font-size:20px;
 }
 
+.left-space{
+  margin-left: 15px;
+}
+
+.top-space{
+  margin-top: 20px;
+}
+
 .flexbox{
   display:flex;
   flex-wrap: wrap;
