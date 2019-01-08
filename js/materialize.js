@@ -4,7 +4,6 @@
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
 
-console.log("howdy")
 
 
 var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
@@ -7197,7 +7196,7 @@ $jscomp.polyfill = function (e, r, p, m) {
        * @prop {Boolean} [indicators=true] - Show indicators
        * @prop {Number} [height=400] - height of slider
        * @prop {Number} [duration=500] - Length in ms of slide transition
-       * @prop {Number} [interval=6000] - Length in ms of slide interval
+       * @prop {Number} [interval=1000] - Length in ms of slide interval
        */
       _this40.options = $.extend({}, Slider.defaults, options);
 
