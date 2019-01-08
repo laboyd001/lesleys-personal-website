@@ -1,7 +1,10 @@
 
 // header image changer=============================
 $(document).ready(function(){
-  $('.slider').slider();
+  $('.slider').slider({
+    interval: 1500,
+    height: 500,
+  });
 });
 // end header image changer=========================
 
