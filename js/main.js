@@ -28,5 +28,16 @@ const scrollElmnt = ((position) => {
 })
 // End Scroll into View=============================
 
+// Materialbox======================================
+  // document.addEventListener('DOMContentLoaded', function() {
+  //   var elems = document.querySelectorAll('.materialboxed');
+  //   var instances = M.Materialbox.init(elems, options);
+  // });
+
+  $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  // End Materialbox==================================
+
 
 
